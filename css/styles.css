@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!   PÁGINA DE INICIO  !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*--------------------------VIDEO DE FONDO-------------------------------*/
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
+/*-------------------ENCABEZADO: LOGO, NAV Y BOTON BOLETAS--------------------------------*/
+.header-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.encabezado {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.logo {
+    width: 150px; 
+    height: auto;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.entradas-btn {
+    background-color: #f7d735;
+    color: rgba(0, 0, 0, 0.703);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*---------------------TEXTO DEL CENTRO Y BOTON COMPRAR BOLETAS----------------------*/
+
+.main-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.animate-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:#f7d735;
+    margin: 2px 0;
+}
+
+.aniversario-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color:white;
+    margin: 2px 0;
+}
+
+.descripcion {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color:white;
+    margin: 2px 0;
+    margin-bottom: 10px;
+    width: 65%;
+}
+
+.compra-btn {
+    background-color: #e74c3c; 
+    color: white;
+    margin: 20px;
+    margin-bottom: 150px;
+    padding: 20px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*************************************FOOTER: REDES SOCIALES************************************/
+
+footer {
+    background-color: rgba(255, 255, 255, 0.7); 
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: auto;
+}
+
+.redes{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea los iconos verticalmente en el centro */
+    gap: 5px; /* Espacio entre los iconos */
+    margin-top: 20px;
+    height: 40px;
+    
+}
+
+.copy_right {
+    align-items: center;
+
+}
