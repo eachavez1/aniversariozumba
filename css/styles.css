@@ -47,6 +47,11 @@ video {
 .logo {
     width: 150px; 
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
 }
 
 nav {
@@ -57,8 +62,14 @@ nav a {
     margin: 0 25px;
     text-decoration: none;
     color: white;
+    transition: transform 0.3s ease;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+nav a:hover {
+    transform: scale(1.2);
+}
 .entradas-btn {
     background-color: #f7d735;
     color: rgba(0, 0, 0, 0.703);
@@ -66,6 +77,13 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.entradas-btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(224, 198, 0);
+    color: white;
 }
 
 /*---------------------TEXTO DEL CENTRO Y BOTON COMPRAR BOLETAS----------------------*/
@@ -75,6 +93,14 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.main-inicio.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .center-text {
@@ -115,22 +141,56 @@ nav a {
     width: 65%;
 }
 
+
+
+.flecha-img {
+    width: 80px;
+    height: 40px;
+    background-image: url('../multimedia/imagenes/flecha.png'); 
+    background-size: cover;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+  
+    40% {
+      transform: translateY(-10px);
+    }
+  
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+
 .compra-btn {
-    background-color: #e74c3c; 
+    border: 6px solid #f7d735;
+    background: transparent;
     color: white;
-    margin: 20px;
     margin-bottom: 150px;
     padding: 20px 40px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    border-radius: 50px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.compra-btn:hover {
+    transform: scale(1.1);
+    border: 6px solid rgb(224, 198, 0);
+}
+
+
 
 /*************************************FOOTER: REDES SOCIALES************************************/
 
 footer {
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(255, 255, 255, 0.8); 
     text-align: center;
     padding: 8px;
     display: flex;
@@ -159,5 +219,7 @@ footer {
 
 .copy_right {
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 
 }
