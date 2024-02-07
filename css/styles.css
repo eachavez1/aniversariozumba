@@ -49,6 +49,7 @@ video {
     width: 150px; 
     height: auto;
     transition: transform 0.3s ease;
+    margin-left: 15px;
 }
 
 .logo:hover {
@@ -59,7 +60,7 @@ nav {
     display: flex;
 }
 
-nav a {
+.navegador-inicio a {
     margin: 0 25px;
     text-decoration: none;
     color: white;
@@ -79,6 +80,7 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin-right: 15px;
 }
 
 .entradas-btn:hover{
@@ -89,20 +91,16 @@ nav a:hover {
 
 /*---------------------TEXTO DEL CENTRO Y BOTON COMPRAR BOLETAS----------------------*/
 
-.main-inicio{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 2s ease, transform 2s ease;
+    opacity: 0; /* Inicialmente, la imagen es transparente */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+    animation-fill-mode: forwards; /* Mantiene el último estado de la animación después de completarse */
 }
 
-.main-inicio.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .center-text {
     display: flex;
@@ -222,5 +220,323 @@ footer {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+}
 
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! PAGINA: QUIENES SOMOS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.body-quienes{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../multimedia/imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-quienes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navegador a{
+    margin: 0 25px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo-pagina{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:#f7d735;
+    margin-top: 20px;
+    opacity: 0; /* Inicialmente, la imagen es transparente */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+    animation-fill-mode: forwards;
+}
+
+.main-quienes h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color:#f7d735;
+    margin: 5px;
+    opacity: 0; /* Inicialmente, la imagen es transparente */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+    animation-fill-mode: forwards;
+}
+
+.p_quienes {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    margin-top: 8px;
+    width: 50%;
+    text-align: justify;
+
+}
+
+.organizadores_contenedor {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .foto_organizadores {
+    margin: 10px;
+    height: 165px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+.organizadores_contenedor img:hover{
+    transform: scale(1.1);
+}
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-100px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! PAGINA INSTRUCTORES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.equipobase{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.image-container {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .image-container:hover {
+    transform: scale(1.13);
+  }
+
+  .main-quienes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .acompañantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .acompañantes p {
+    text-align: center;
+    width: 100%;
+  }
+
+.p_instructores {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    margin-top: 8px;
+    width: 50%;
+    text-align: center;
+}
+.contenedor-acom {
+    flex: 0 0 calc(20% - 20px);
+    margin: 10px;
+    overflow: hidden;
+}
+.contenedor-acom img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ANIVERSARIO #12 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.main-aniversario12 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:#f7d735;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    opacity: 0; /* Inicialmente, la imagen es transparente */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+    animation-fill-mode: forwards;
+}
+
+.p_aniversario12 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: white;
+    width: 60%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 40px;   
+}
+
+.titulo-galeria{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    color:#f7d735;
+    margin-top: 50px;
+}
+
+/************************** CARRUSEL DE FOTOS *************************/
+
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .carousel-preview {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 60%;
+    overflow-x: auto; 
+    white-space: nowrap;
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+  }
+
+  
+
+  .carousel-main {
+    position: relative;
+    text-align: center;
+
+  }
+  
+  #mainImage {
+    max-width: 600px;
+    max-height: 450px;
+  }
+
+
+  .arrow {
+    font-size: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: 69%;
+    color: rgba(255, 255, 255, 0.703); 
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow:hover{
+    transform: scale(1.3);
+    color: rgba(255, 255, 255, 1); 
+  }
+
+  .left {
+    left: 20%; 
+  }
+  
+  .right {
+    right: 20%; 
+  }
+  
+  .fullscreen-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+  }
+  
+  .fullscreen-btn img {
+    width: 50px;
+    height: 50px; 
+    opacity: 0.7;
+    transition: transform 0.3s ease;
+  }
+
+  .fullscreen-btn img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACTANOS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.p_contactanos{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: white;
+    margin-top: 8px;
+    width: 50%;
+    text-align: center;
+
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.contacto img{
+    width: 44px;
+    height: 40px;
+    margin: 8px;
+}
+
+.contacto p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 30px;
 }
