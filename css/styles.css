@@ -81,6 +81,7 @@ nav a:hover {
     cursor: pointer;
     transition: transform 0.3s ease;
     margin-right: 15px;
+    text-decoration: none;
 }
 
 .entradas-btn:hover{
@@ -177,7 +178,9 @@ main {
     border-radius: 50px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    text-decoration: none;
 }
+
 
 .compra-btn:hover {
     transform: scale(1.1);
@@ -455,7 +458,7 @@ footer {
   }
   
   #mainImage {
-    max-width: 600px;
+    max-width: 635px;
     max-height: 450px;
   }
 
@@ -539,4 +542,247 @@ footer {
     margin-top: 20px;
     margin-left: 5px;
     margin-bottom: 30px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BOLETAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.body_boletas {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../multimedia/imagenes/fondo_boletas.jpg');
+  background-size: cover;
+  background-position: center;
+background-repeat: no-repeat;
+}
+
+.main-boletas{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mapas-container{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapas-container img {
+  width: 40%;
+  margin: 10px;
+}
+
+/********************* COMPRA DE BOLETAS ***************/ 
+
+.producto-container {
+  display: flex;
+  justify-content: center;     /* Es el contenedor de los 3 tipos de boletas*/
+  align-items: end;
+  margin-top: 100px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;    /*Son las boletas General y Palco*/
+  margin: 0 20px;
+  text-align: center;
+}
+.producto img{
+  border-radius: 7px;
+}
+
+.tamaño300{
+  width: 300px;   
+}
+
+.borde_general {
+  border: 10px solid rgb(28, 97, 200);
+}
+
+.borde_palco{
+  border: 10px solid rgb(186, 27, 27);
+}
+
+.boleta_vip {
+  display: flex;
+  flex-direction: column;     /*Es la boleta vip con sus botones */
+  margin: 0 20px;
+  text-align: center;
+}
+.boleta_vip img {
+  width: 330px;               /*Imagen de la boleta vip*/
+  border-radius: 7px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;  /*Contiene el boton de añadir al carrito y el selector de cantidad*/
+  align-items: end;
+  text-align: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.selector-cantidad {
+  width: 50px; 
+  height: 27px;
+  padding: 6px;
+  text-align: center;
+  background-color: rgba(116, 12, 228, 0.8);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  border:none;
+  border-radius: 5px;
+}
+
+.selector-cantidad::before,
+.selector-cantidad::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: white transparent transparent transparent;
+  position: relative;
+  top: -1px;
+}
+
+.selector-cantidad:focus {
+  outline: none;
+  border: 3px solid white; 
+}
+
+.agregar-al-carrito {
+  background-color: rgba(116, 12, 228, 0.8);
+  padding: 10px;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: transform 0.3s ease;
+}
+
+.agregar-al-carrito:hover {
+  transform: scale(1.1);
+
+}
+
+.carrito-container {
+  background-color: rgba(191, 182, 225, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+
+
+.boton_comprar {
+  background-color: rgba(116, 12, 228, 0.8);
+  padding: 10px;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.boton_comprar:hover {
+  transform: scale(1.1);
+}
+
+.eliminar-boleta {
+  background-color: rgba(116, 12, 228, 0.8);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.eliminar-boleta:hover{
+  transform: scale(1.05);
+  color: yelow
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! PRE PASARELA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.resumen_pago{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+}
+
+
+.ir-a-pagar {
+  background-color: rgba(116, 12, 228, 0.8);
+  padding: 10px;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  margin: 30px;
+
+}
+
+.ir-a-pagar:hover{
+  transform: scale(1.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 90%;
+  padding: 10px;
+}
+
+.datos-comprador label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.datos-comprador input, select {
+  background-color: rgba(116, 12, 228, 0.5);
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 16px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+
+button:hover {
+  background-color: #45a049;
 }

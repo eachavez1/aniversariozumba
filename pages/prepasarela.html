@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Rethink+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Aniversario Zumba Colombia #13</title>
+</head>
+<body class="body_boletas">
+
+    <header class="header-quienes">
+        <a href="/index.html">
+            <img class="logo" src="../multimedia/imagenes/logo.png" alt="Logo">
+        </a>
+        <nav class="navegador encabezado">
+            <a class="encabezado" href="/index.html">INICIO</a>
+            <a class="encabezado" href="/pages/quienes.html">QUIÉNES SOMOS</a>
+            <a class="encabezado" href="/pages/instructores.html">INSTRUCTORES</a>
+            <a class="encabezado" href="/pages/aniversario12.html">ANIVERSARIO #12</a>
+            <a class="encabezado" href="/pages/contactanos.html">CONTÁCTANOS</a>
+        </nav>
+        <a href="/pages/boletas.html" class="entradas-btn encabezado">BOLETAS</a>
+    </header>
+    <main class="main-prepasarela">
+
+        
+        <div class="carrito-container  resumen_pago">
+            <h2>Resumen de Compra</h2>
+            <div id="carrito-detalles"></div>
+            <p>Cantidad total de boletas a comprar: <span id="carrito-cantidad">0</span></p>
+            <p>Total a pagar: $<span id="carrito-total">0</span></p>
+            
+            <form id="datos_comprador" class="datos-comprador">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+            
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            
+                <label for="tipoDocumento">Tipo de Documento:</label>
+                <select id="tipoDocumento" name="tipoDocumento" required>
+                  <option value="CC">CC</option>
+                  <option value="pasaporte">Pasaporte</option>
+                </select>
+            
+                <label for="numeroDocumento">Número de Documento:</label>
+                <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+            
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            
+              </form>
+            
+            <button class="ir-a-pagar" id="ir_a_pagar">IR A PAGAR</button>
+          </div>
+        
+
+    </main>
+
+    <footer>
+        <div class="redes"> <!--Redes Sociales-->
+            <div class="iconos">
+              <a href="https://www.instagram.com/aniversariozumbacolombia/" target="_blank"><img
+                  src="../multimedia/imagenes/Instagram.png" alt="" width="50" height="50"></a>
+              <a href="https://www.facebook.com/profile.php?id=61554683035749" target="_blank"><img
+                  src="../multimedia/imagenes/Facebook.png" alt="" width="50" height="50"></a>
+              <a href="https://www.tiktok.com/@aniversariozumbacolombia?_t=8i6v4W06MMA&_r=1" target="_blank"><img
+                  src="../multimedia/imagenes/tiktok.png" alt="" width="50" height="50"></a>
+              <a href="https://www.youtube.com/channel/UCGp7vDLuimASpK95QEhU1vQ" target="_blank"><img
+                  src="../multimedia/imagenes/youtube.png" alt="" width="50" height="50"></a>
+            </div>
+            <p class="copy_right">© 2024 by Aniversario Zumba® Colombia</p>
+          </div>
+    </footer>
+
+
+    <script defer src="../js/main.js"></script>
+
+</body>
+</html>
+
+
+
