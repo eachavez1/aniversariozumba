@@ -795,6 +795,10 @@ button:hover {
   background-color: #45a049;
 }
 
+#fullscreen-boton:hover {
+  background-color: transparent;
+}
+
 .hidden {
   display: none;
 }
@@ -848,4 +852,13 @@ button:hover {
   font-size: 15px;
   font-weight: 800;
 
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DISEÑO RESPONSIVE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media only screen and (max-width: 767px) {
+
+
+  
 }
