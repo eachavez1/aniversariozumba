@@ -236,7 +236,7 @@ footer {
     background-image: url('../multimedia/imagenes/fondo.jpg');
     background-size: cover;
     background-position: center;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
 }
 
 .header-quienes{
@@ -652,7 +652,7 @@ background-repeat: no-repeat;
 
 .selector-cantidad::before,
 .selector-cantidad::after {
-  content: '';
+
   display: inline-block;
   width: 0;
   height: 0;
