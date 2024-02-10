@@ -212,8 +212,8 @@ footer {
 .iconos {
     display: flex;
     justify-content: center;
-    align-items: center; /* Alinea los iconos verticalmente en el centro */
-    gap: 5px; /* Espacio entre los iconos */
+    align-items: center; 
+    gap: 5px; 
     margin-top: 20px;
     height: 40px;
     
@@ -263,8 +263,8 @@ footer {
     font-size: 40px;
     color:#f7d735;
     margin-top: 20px;
-    opacity: 0; /* Inicialmente, la imagen es transparente */
-    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out;
     animation-fill-mode: forwards;
 }
 
@@ -274,8 +274,8 @@ footer {
     font-size: 25px;
     color:#f7d735;
     margin: 5px;
-    opacity: 0; /* Inicialmente, la imagen es transparente */
-    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out; 
     animation-fill-mode: forwards;
 }
 
@@ -396,8 +396,8 @@ footer {
     color:#f7d735;
     margin-top: 20px;
     margin-bottom: 0px;
-    opacity: 0; /* Inicialmente, la imagen es transparente */
-    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in-out; 
     animation-fill-mode: forwards;
 }
 
@@ -570,6 +570,7 @@ background-repeat: no-repeat;
   width: 80%;
   align-items: center;
   justify-content: center;
+  gap:60px
 }
 
 .mapas-container img {
@@ -779,8 +780,8 @@ form {
 
 .datos-comprador input,
 .datos-comprador select {
-  width: 100%; /* Establece el ancho al 100% */
-  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  width: 100%; 
+  box-sizing: border-box; 
   background-color: rgba(116, 12, 228, 0.5);
   padding: 8px;
   margin-bottom: 16px;
@@ -802,13 +803,32 @@ button:hover {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! PAGINA QR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
 
 .qr {
-  background-size: contain; /* Otra opción puede ser 'contain' dependiendo de tus necesidades */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: contain; 
   background-position: center center;
   background-repeat: no-repeat;
   width: 270px;
   height: 388px;
   background-color: #45a049;
   margin: 20px;
+  color: white;
+}
+
+.qr div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin-bottom: 70px;
 }
 
 .qr-vip {
@@ -821,4 +841,11 @@ button:hover {
 
 .qr-palco {
   background-image: url(../multimedia/imagenes/qr_palco.png);
+}
+
+.nombre_comprador {
+  font-family: 'Montserrat', sans-serif; ;
+  font-size: 15px;
+  font-weight: 800;
+
 }
