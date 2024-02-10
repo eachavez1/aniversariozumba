@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// PRE PASARELA ////////////////////////////////////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", function () {
   const carritoDetalles = document.getElementById('carrito-detalles');
@@ -261,3 +261,33 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   }
 });
+
+
+////////////////////////////////////////  LISTA DESPLEGABLE INSTRUCTORES ////////////////////////////////////////
+
+function mostrarOpciones() {
+  var fuenteEvento = document.getElementById("fuenteEvento").value;
+  var opcionesInstructor = document.getElementById("opcionesInstructor");
+  var opcionesRedesSociales = document.getElementById("opcionesRedesSociales");
+
+  opcionesInstructor.classList.add("hidden");
+  opcionesRedesSociales.classList.add("hidden");
+
+  if (fuenteEvento === "instructor") {
+      opcionesInstructor.classList.remove("hidden");
+      // Hacer la lista desplegable obligatoria
+      document.getElementById("instructor").setAttribute("required", "required");
+      // Remover la obligatoriedad de la otra lista desplegable
+      document.getElementById("redSocial").removeAttribute("required");
+  } else if (fuenteEvento === "redesSociales") {
+      opcionesRedesSociales.classList.remove("hidden");
+      // Hacer la lista desplegable obligatoria
+      document.getElementById("redSocial").setAttribute("required", "required");
+      // Remover la obligatoriedad de la otra lista desplegable
+      document.getElementById("instructor").removeAttribute("required");
+  } else {
+      // Si está oculta, remover la obligatoriedad de ambas listas desplegables
+      document.getElementById("instructor").removeAttribute("required");
+      document.getElementById("redSocial").removeAttribute("required");
+  }
+}

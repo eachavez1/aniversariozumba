@@ -624,12 +624,18 @@ background-repeat: no-repeat;
   justify-content: center;  /*Contiene el boton de añadir al carrito y el selector de cantidad*/
   align-items: end;
   text-align: center;
-  gap: 10px;
   margin-top: 20px;
+}
+
+.botones img{
+  width: 42px;
+  opacity: 0.9;
+  margin-right: 8px;
 }
 
 
 .selector-cantidad {
+  margin-left: 15px;
   width: 50px; 
   height: 27px;
   padding: 6px;
@@ -676,7 +682,6 @@ background-repeat: no-repeat;
 
 .agregar-al-carrito:hover {
   transform: scale(1.1);
-
 }
 
 .carrito-container {
@@ -772,9 +777,11 @@ form {
   margin-bottom: 8px;
 }
 
-.datos-comprador input, select {
+.datos-comprador input,
+.datos-comprador select {
+  width: 100%; /* Establece el ancho al 100% */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
   background-color: rgba(116, 12, 228, 0.5);
-  width: 80%;
   padding: 8px;
   margin-bottom: 16px;
   color: white;
@@ -785,4 +792,8 @@ form {
 
 button:hover {
   background-color: #45a049;
+}
+
+.hidden {
+  display: none;
 }
