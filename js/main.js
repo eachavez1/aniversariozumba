@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cantidadPorTipo = {};
 
   selectoresCantidad.forEach(selector => {
-    selector.value = 3;
+    selector.value = 0;
   });
 
   botonesAgregar.forEach((boton, index) => {
