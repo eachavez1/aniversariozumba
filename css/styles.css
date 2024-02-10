@@ -590,7 +590,7 @@ background-repeat: no-repeat;
 .producto {
   display: flex;
   flex-direction: column;    /*Son las boletas General y Palco*/
-  margin: 0 20px;
+  margin: 0 10px;
   text-align: center;
 }
 .producto img{
@@ -598,7 +598,7 @@ background-repeat: no-repeat;
 }
 
 .tamaño300{
-  width: 300px;   
+  width: 350px;   
 }
 
 .borde_general {
@@ -612,11 +612,11 @@ background-repeat: no-repeat;
 .boleta_vip {
   display: flex;
   flex-direction: column;     /*Es la boleta vip con sus botones */
-  margin: 0 20px;
+  margin: 0 10px;
   text-align: center;
 }
 .boleta_vip img {
-  width: 330px;               /*Imagen de la boleta vip*/
+  width: 380px;               /*Imagen de la boleta vip*/
   border-radius: 7px;
 }
 
@@ -650,23 +650,6 @@ background-repeat: no-repeat;
   border-radius: 5px;
 }
 
-.selector-cantidad::before,
-.selector-cantidad::after {
-
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 5px 0 5px;
-  border-color: white transparent transparent transparent;
-  position: relative;
-  top: -1px;
-}
-
-.selector-cantidad:focus {
-  outline: none;
-  border: 3px solid white; 
-}
 
 .agregar-al-carrito {
   background-color: rgba(116, 12, 228, 0.8);
