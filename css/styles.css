@@ -797,3 +797,28 @@ button:hover {
 .hidden {
   display: none;
 }
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! PAGINA QR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ 
+
+.qr {
+  background-size: contain; /* Otra opción puede ser 'contain' dependiendo de tus necesidades */
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 388px;
+  background-color: #45a049;
+  margin: 20px;
+}
+
+.qr-vip {
+  background-image: url(../multimedia/imagenes/qr_vip.png);
+}
+
+.qr-general {
+  background-image: url(../multimedia/imagenes/qr_general.png);
+}
+
+.qr-palco {
+  background-image: url(../multimedia/imagenes/qr_palco.png);
+}

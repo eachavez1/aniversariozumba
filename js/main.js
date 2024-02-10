@@ -291,3 +291,11 @@ function mostrarOpciones() {
       document.getElementById("redSocial").removeAttribute("required");
   }
 }
+
+////////////////////////////////////// PAGINA DEL QR //////////////////////////////////////////
+
+
+document.getElementById('ir_a_pagar').addEventListener('click', function() {
+ 
+  window.location.href = 'qr.html';
+});
