@@ -60,8 +60,9 @@ nav {
     display: flex;
 }
 
+
 .navegador-inicio a {
-    margin: 0 25px;
+    margin: 0 19px;
     text-decoration: none;
     color: white;
     transition: transform 0.3s ease;
@@ -249,7 +250,7 @@ footer {
 }
 
 .navegador a{
-    margin: 0 25px;
+    margin: 0 19px;
     text-decoration: none;
     color: black;
     transition: transform 0.3s ease;
@@ -840,7 +841,119 @@ button:hover {
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DISEÑO RESPONSIVE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 1200px) {
+
+  .navegador-inicio a {
+    margin: 0 12px;
+  }
+ 
+  .navegador a{
+    margin: 0 12px;
+}
+
+.encabezado {
+  font-size: 16px;
+}
+
+
+.animate-text{
+
+  font-size: 35px;
+  color:#f7d735;
+  margin: 2px 0;
+}
+
+.aniversario-text {
+  font-size: 28px;
+  color:white;
+  margin: 2px 0;
+}
+
+.descripcion {
+  font-size: 18px;
+  color:white;
+  margin: 2px 0;
+  margin-bottom: 10px;
+  width: 65%;
+}
+
+
+.tamaño300{
+  width: 290px;   
+}
+
+.boleta_vip img {
+  width: 300px;              
+}
+
+.botones img {
+  width: 42px;
+}
+
+
+  
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .logo {
+    width: 120px;
+    margin-left: 30px;
+  }
+
+  .navegador-inicio a {
+    margin: 0 10px;
+  }
+ 
+  .navegador a{
+    margin: 0 10px;
+}
+
+.encabezado {
+  font-size: 14px;
+}
+
+.entradas-btn {
+  padding: 8px 16px;
+  margin-right: 30px;
+
+}
+
+
+.animate-text{
+
+  font-size: 35px;
+  color:#f7d735;
+  margin: 2px 0;
+}
+
+.aniversario-text {
+  font-size: 28px;
+  color:white;
+  margin: 2px 0;
+}
+
+.descripcion {
+  font-size: 18px;
+  color:white;
+  margin: 2px 0;
+  margin-bottom: 10px;
+  width: 65%;
+}
+
+
+.tamaño300{
+  width: 275px;   
+}
+
+.boleta_vip img {
+  width: 285px;              
+}
+
+.botones img {
+  width: 42px;
+}
 
 
   
