@@ -292,6 +292,71 @@ function mostrarOpciones() {
   }
 }
 
+
+// Función para filtrar la lista desplegable según la búsqueda
+function filterDropdown() {
+  var input, filter, options, option, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  options = document.querySelectorAll("#filterOptions li");
+
+  options.forEach(function(option) {
+    txtValue = option.textContent || option.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      option.style.display = "";
+    } else {
+      option.style.display = "none";
+    }
+  });
+
+  // Mostrar la lista desplegable
+  document.querySelector('.custom-dropdown').style.display = "block";
+}
+
+// Mostrar todas las opciones al hacer clic en el input
+document.getElementById("searchInput").addEventListener("focus", function() {
+  var options = document.querySelectorAll("#filterOptions li");
+  options.forEach(function(option) {
+    option.style.display = "";
+  });
+
+  // Mostrar la lista desplegable
+  document.querySelector('.custom-dropdown').style.display = "block";
+});
+
+// Seleccionar opción al hacer clic en un elemento de la lista
+document.getElementById("filterOptions").addEventListener("click", function(event) {
+  var selectedValue = event.target.dataset.value;
+  if (selectedValue) {
+    // Ocultar la opción seleccionada
+    event.target.style.display = "none";
+
+    // Agregar la opción al campo de entrada
+    var input = document.getElementById("searchInput");
+    input.value = selectedValue;
+
+    // Ocultar la lista desplegable
+    document.querySelector('.custom-dropdown').style.display = "none";
+  }
+});
+
+// Controlador de clics en el documento para cerrar la lista desplegable
+document.addEventListener('click', function(event) {
+  var dropdownContainer = document.querySelector('.custom-dropdown');
+  var searchInput = document.getElementById('searchInput');
+
+  // Si el clic no está dentro del contenedor de la lista desplegable o del input
+  if (!dropdownContainer.contains(event.target) && event.target !== searchInput) {
+    // Ocultar la lista desplegable
+    dropdownContainer.style.display = 'none';
+  }
+});
+
+// Asociar la función de filtrado al evento de entrada de búsqueda
+document.getElementById("searchInput").addEventListener("input", filterDropdown);
+
+
+
 ////////////////////////////////////// PAGINA DEL QR //////////////////////////////////////////
 
 

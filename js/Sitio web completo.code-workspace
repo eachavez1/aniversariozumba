@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../Sitio web completo"
+		},
+		{
+			"name": "aniversariozumba",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "aniversariozumba"
+	}
+}

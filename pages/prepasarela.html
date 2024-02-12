@@ -324,15 +324,20 @@
                     <option value="redesSociales">POR REDES SOCIALES</option>
                 </select>
 
-                <div id="opcionesInstructor" class="hidden">
-                <label for="instructor">Selecciona el Instructor:</label>
-                <select id="instructor" name="instructor">
+                <div class="dropdown-container hidden" id="opcionesInstructor">
+                    <label for="instructor">Selecciona el Instructor:</label>
+                    <input type="text" id="searchInput" placeholder="Buscar..." />
+    
+                    <div class="custom-dropdown" id="instructor" name="instructor">
+                        <ul id="filterOptions">
+                            <li data-value="opcion1">Opción 1</li>
+                            <li data-value="opcion2">Opción 2</li>
+                            <li data-value="opcion3">Opción 3</li>
 
-                    <option value="instructor1">Instructor 1</option>
-                    <option value="instructor2">Instructor 2</option>
-
-                </select>
+                        </ul>
+                    </div>
                 </div>
+
 
                 <div id="opcionesRedesSociales" class="hidden">
                 <label for="redSocial">Selecciona la Red Social:</label>
